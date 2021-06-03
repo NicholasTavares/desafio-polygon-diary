@@ -15,20 +15,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-.container {
-  height: 100vh;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .book-container {
-  width: 120rem;
-  height: 58rem;
-  background-color: white; }
+  background-color: white;
+  height: 100vh; }
 
 .header {
-  height: 5rem;
+  height: 8%;
   display: flex;
   justify-content: flex-end;
   background-color: #333;
@@ -57,6 +49,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     color: #333; }
     .header__options:hover {
       background-color: #dfdfba; }
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  height: 92%;
+  background-color: aqua; }
 
 *,
 *::after,
