@@ -17,7 +17,46 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 .container {
   height: 100vh;
-  background-color: red; }
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.book-container {
+  width: 120rem;
+  height: 58rem;
+  background-color: white; }
+
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+  font-size: 3rem; }
+  .header__icon {
+    position: relative;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ghostwhite;
+    transition: 0.5s ease all; }
+    .header__icon:hover {
+      cursor: pointer;
+      background-color: ghostwhite;
+      color: #333; }
+  .header__container-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110%; }
+  .header__options {
+    transition: 0.5s ease all;
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    color: #333; }
+    .header__options:hover {
+      background-color: #dfdfba; }
 
 *,
 *::after,

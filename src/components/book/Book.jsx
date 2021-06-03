@@ -1,9 +1,10 @@
 import React from 'react'
+import Header from '../header/Header'
 
 const Book = () => {
     return (
-        <main>
-
+        <main className='book-container'>
+            <Header/>
         </main>
     )
 }
