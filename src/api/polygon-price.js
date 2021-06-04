@@ -3,15 +3,26 @@ import axios from 'axios'
 
 export default function Price(){
     const [price, setPrice] = useState(null)
+    let contador = 0
+    let limit = 10
+    let returnArray = [] 
     
-    async function searchPrice(TICKER){
-        if(TICKER){
-            console.log(TICKER)
-            const result = await axios.get(`https://api.polygon.io/v1/open-close/${TICKER}/2020-10-14?unadjusted=true&apiKey=z763xgz4zplhCz0dglQZtc59e9wKGzgM`)
-            console.log(result)
-            setPrice(result)
+    function searchPrice(arrayTickers){
+        return axios.get(`https://api.polygon.io/v1/open-close/${arrayTickers[contador].ticker}/2020-10-14?unadjusted=true&apiKey=z763xgz4zplhCz0dglQZtc59e9wKGzgM`).
+        then((response) => {
+                console.log(response.data)
+                returnArray.push(response.data);
+                contador++
+                setTimeout(() => {
+                    searchPrice(arrayTickers);
+                }, 4000)
+                if(contador >= limit){
+                    return returnArray
+                }
+        }).catch((err) => {
+          return err
         }
-    }
+    )};
 
     return [price, searchPrice]
 

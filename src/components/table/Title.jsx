@@ -9,17 +9,8 @@ const Title = () => {
                     <div className='table-container__table-title__container-item__content'>
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
-                                Country
-                                </p>
-                        </div>
-                    </div>
-                </th>
-                <th className='table-container__table-title__container-item'>
-                    <div className='table-container__table-title__container-item__content'>
-                        <div className='table-container__table-title__container-item__content__item'>
-                            <p className='table-container__table-title__container-item__content__item-text'>
-                                Industry
-                                </p>
+                                Ticker
+                            </p>
                         </div>
                     </div>
                 </th>
@@ -28,7 +19,7 @@ const Title = () => {
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
                                 Nome
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </th>
@@ -36,8 +27,8 @@ const Title = () => {
                     <div className='table-container__table-title__container-item__content'>
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
-                                Ticker
-                                </p>
+                                Country
+                            </p>
                         </div>
                     </div>
                 </th>
@@ -45,8 +36,8 @@ const Title = () => {
                     <div className='table-container__table-title__container-item__content'>
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
-                                Último Preço
-                                </p>
+                                Market
+                            </p>
                         </div>
                     </div>
                 </th>
@@ -54,8 +45,17 @@ const Title = () => {
                     <div className='table-container__table-title__container-item__content'>
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
-                                Variação
-                                </p>
+                                Primary Exch
+                            </p>
+                        </div>
+                    </div>
+                </th>
+                <th className='table-container__table-title__container-item'>
+                    <div className='table-container__table-title__container-item__content'>
+                        <div className='table-container__table-title__container-item__content__item'>
+                            <p className='table-container__table-title__container-item__content__item-text'>
+                                24h %
+                            </p>
                         </div>
                     </div>
                 </th>
@@ -64,7 +64,7 @@ const Title = () => {
                         <div className='table-container__table-title__container-item__content__item'>
                             <p className='table-container__table-title__container-item__content__item-text'>
                                 Market cap
-                                </p>
+                            </p>
                         </div>
                     </div>
                 </th>

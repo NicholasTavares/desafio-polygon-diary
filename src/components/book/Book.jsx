@@ -6,7 +6,9 @@ const Book = () => {
     return (
         <div className='book-container'>
             <Header />
-            <Table />
+            <div className='table-container'>
+                <Table />
+            </div>
         </div>
     )
 }

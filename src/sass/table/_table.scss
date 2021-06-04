@@ -15,10 +15,38 @@
       position: sticky;
       position: -webkit-sticky; /* Safari */
       top: -1px;
-      z-index: 100;
+      z-index: 110;
       background-color: white;
       padding: 1rem 1rem;
       box-shadow: 0px 2px #eff2f5;
+
+      @include respond(tab-port) {
+        &:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 121;
+        }
+        &:nth-child(2) {
+          position: sticky;
+          left: 2rem;
+          z-index: 120;
+          min-width: 40rem;
+        }
+      }
+
+      @include respond(phone) {
+        &:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 121;
+        }
+        &:nth-child(2) {
+          position: sticky;
+          left: 6rem;
+          z-index: 120;
+          min-width: 25rem;
+        }
+      }
 
       &__content {
         display: flex;
@@ -57,6 +85,54 @@
     }
 
     &__td {
+      color: black;
+      text-align: right;
+      border-bottom: 1px solid #eff2f5;
+      border-collapse: collapse;
+      padding: 1.8rem 1rem;
+      font-weight: 600;
+      background-color: white;
+
+      @include respond(tab-port) {
+        &:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 101;
+        }
+        &:nth-child(2) {
+          position: sticky;
+          left: 2rem;
+          z-index: 100;
+          min-width: 40rem;
+        }
+      }
+
+      @include respond(phone) {
+        &:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 100;
+        }
+        &:nth-child(2) {
+          position: sticky;
+          left: 6rem;
+          z-index: 100;
+          min-width: 25rem;
+        }
+      }
+    }
+
+    &__td-red {
+      color: #ea3943;
+      text-align: right;
+      border-bottom: 1px solid #eff2f5;
+      border-collapse: collapse;
+      padding: 1.8rem 1rem;
+      font-weight: 600;
+    }
+
+    &__td-green {
+      color: #16c784;
       text-align: right;
       border-bottom: 1px solid #eff2f5;
       border-collapse: collapse;

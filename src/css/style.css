@@ -22,6 +22,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin-left: 3rem;
   margin-right: 3rem; }
 
+.table-container {
+  overflow-x: scroll; }
+
 .header {
   height: 8%;
   display: flex;
@@ -69,10 +72,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
       position: -webkit-sticky;
       /* Safari */
       top: -1px;
-      z-index: 100;
+      z-index: 110;
       background-color: white;
       padding: 1rem 1rem;
       box-shadow: 0px 2px #eff2f5; }
+      @media (max-width: 56.25em) {
+        .table-container__table-title__container-item:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 121; }
+        .table-container__table-title__container-item:nth-child(2) {
+          position: sticky;
+          left: 2rem;
+          z-index: 120;
+          min-width: 40rem; } }
+      @media (max-width: 37.5em) {
+        .table-container__table-title__container-item:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 121; }
+        .table-container__table-title__container-item:nth-child(2) {
+          position: sticky;
+          left: 6rem;
+          z-index: 120;
+          min-width: 25rem; } }
       .table-container__table-title__container-item__content {
         display: flex;
         flex-direction: row;
@@ -95,6 +118,42 @@ ORDER: Base + typography > general layout + grid > page layout > components
       .table-container__body__row:hover {
         background-color: #eff2f5d7; }
     .table-container__body__td {
+      color: black;
+      text-align: right;
+      border-bottom: 1px solid #eff2f5;
+      border-collapse: collapse;
+      padding: 1.8rem 1rem;
+      font-weight: 600;
+      background-color: white; }
+      @media (max-width: 56.25em) {
+        .table-container__body__td:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 101; }
+        .table-container__body__td:nth-child(2) {
+          position: sticky;
+          left: 2rem;
+          z-index: 100;
+          min-width: 40rem; } }
+      @media (max-width: 37.5em) {
+        .table-container__body__td:nth-child(1) {
+          position: sticky;
+          left: 0;
+          z-index: 100; }
+        .table-container__body__td:nth-child(2) {
+          position: sticky;
+          left: 6rem;
+          z-index: 100;
+          min-width: 25rem; } }
+    .table-container__body__td-red {
+      color: #ea3943;
+      text-align: right;
+      border-bottom: 1px solid #eff2f5;
+      border-collapse: collapse;
+      padding: 1.8rem 1rem;
+      font-weight: 600; }
+    .table-container__body__td-green {
+      color: #16c784;
       text-align: right;
       border-bottom: 1px solid #eff2f5;
       border-collapse: collapse;
