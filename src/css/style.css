@@ -16,8 +16,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 .book-container {
-  background-color: white;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem; }
 
 .header {
   height: 8%;
@@ -51,10 +54,44 @@ ORDER: Base + typography > general layout + grid > page layout > components
       background-color: #dfdfba; }
 
 .table-container {
-  display: flex;
-  flex-direction: column;
-  height: 92%;
-  background-color: aqua; }
+  align-items: center;
+  color: ghostwhite;
+  max-height: 92%;
+  border-collapse: collapse; }
+  .table-container__table-title {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black; }
+    .table-container__table-title__container-item {
+      position: sticky;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid #eff2f5; }
+      .table-container__table-title__container-item__content {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        justify-content: flex-end; }
+        .table-container__table-title__container-item__content__item {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center; }
+        .table-container__table-title__container-item__content__item-text {
+          white-space: nowrap; }
+  .table-container__body {
+    color: black;
+    border-spacing: 0;
+    box-sizing: border-box; }
+    .table-container__body__row {
+      font-size: 1.3rem; }
+    .table-container__body__td {
+      text-align: right;
+      border-bottom: 1px solid #eff2f5;
+      border-collapse: collapse;
+      padding: 1.8rem 1rem;
+      font-weight: 600; }
 
 *,
 *::after,

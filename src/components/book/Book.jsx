@@ -4,10 +4,10 @@ import Table from '../table/Table'
 
 const Book = () => {
     return (
-        <main className='book-container'>
-            <Header/>
-            <Table/>
-        </main>
+        <div className='book-container'>
+            <Header />
+            <Table />
+        </div>
     )
 }
 
