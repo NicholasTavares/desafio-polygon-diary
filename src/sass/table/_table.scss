@@ -1,7 +1,7 @@
 .table-container {
   align-items: center;
   color: ghostwhite;
-  max-height: 92%;
+  width: 100%;
   border-collapse: collapse;
 
   &__table-title {
@@ -91,19 +91,20 @@
       border-collapse: collapse;
       padding: 1.8rem 1rem;
       font-weight: 600;
-      background-color: white;
 
       @include respond(tab-port) {
         &:nth-child(1) {
           position: sticky;
           left: 0;
           z-index: 101;
+          background-color: white;
         }
         &:nth-child(2) {
           position: sticky;
           left: 2rem;
           z-index: 100;
           min-width: 40rem;
+          background-color: white;
         }
       }
 

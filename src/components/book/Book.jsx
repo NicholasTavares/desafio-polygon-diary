@@ -6,7 +6,7 @@ const Book = () => {
     return (
         <div className='book-container'>
             <Header />
-            <div className='table-container'>
+            <div className='table-container-scroll'>
                 <Table />
             </div>
         </div>

@@ -2,10 +2,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
-.table-container {
-  overflow-x: scroll;
+.table-container-scroll {
+  overflow-x: auto;
+  max-height: 92%;
 }
