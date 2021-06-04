@@ -92,6 +92,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     box-sizing: border-box; }
     .table-container__body__row {
       font-size: 1.4rem; }
+      .table-container__body__row:hover {
+        background-color: #eff2f5d7; }
     .table-container__body__td {
       text-align: right;
       border-bottom: 1px solid #eff2f5;

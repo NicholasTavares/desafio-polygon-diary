@@ -50,6 +50,10 @@
 
     &__row {
       font-size: 1.4rem;
+
+      &:hover {
+        background-color: #eff2f5d7;
+      }
     }
 
     &__td {

@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Price from '../../api/polygon-price'
 
 const Data = ({ country, ticker, name }) => {
+
+    const [price, searchPrice] = Price()
+
+    useEffect(() => {
+        searchPrice(ticker)
+    }, [])
 
     return (
         <tr className='table-container__body__row'>
