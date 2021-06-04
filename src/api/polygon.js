@@ -7,7 +7,7 @@ export default function Ticker(){
     async function search(BASE_URL){
         if(BASE_URL){
             console.log(BASE_URL)
-            await axios.get(`${BASE_URL}`).then(res => setData(res))
+            await axios.get(`${BASE_URL}`).then(res => setData(res.data.tickers))
         }
     }
 

@@ -15,7 +15,7 @@ const Table = () => {
         <table className='table-container'>
             <Title />
             <tbody className='table-container__body'>
-                <Data />
+                {data ? data.map((data) => (<Data country={data.locale} ticker={data.ticker} name={data.name} />)) : 'Loading...'}
             </tbody>
         </table>
     )

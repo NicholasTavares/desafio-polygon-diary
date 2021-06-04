@@ -6,14 +6,19 @@
 
   &__table-title {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: black;
+    position: relative;
 
     &__container-item {
       position: sticky;
+      position: -webkit-sticky; /* Safari */
+      top: -1px;
+      z-index: 100;
+      background-color: white;
       padding: 1rem 1rem;
-      border-bottom: 1px solid #eff2f5;
+      box-shadow: 0px 2px #eff2f5;
 
       &__content {
         display: flex;
@@ -44,7 +49,7 @@
     box-sizing: border-box;
 
     &__row {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     &__td {

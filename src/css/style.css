@@ -60,13 +60,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border-collapse: collapse; }
   .table-container__table-title {
     margin-top: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    color: black; }
+    color: black;
+    position: relative; }
     .table-container__table-title__container-item {
       position: sticky;
+      position: -webkit-sticky;
+      /* Safari */
+      top: -1px;
+      z-index: 100;
+      background-color: white;
       padding: 1rem 1rem;
-      border-bottom: 1px solid #eff2f5; }
+      box-shadow: 0px 2px #eff2f5; }
       .table-container__table-title__container-item__content {
         display: flex;
         flex-direction: row;
@@ -85,7 +91,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     border-spacing: 0;
     box-sizing: border-box; }
     .table-container__body__row {
-      font-size: 1.3rem; }
+      font-size: 1.4rem; }
     .table-container__body__td {
       text-align: right;
       border-bottom: 1px solid #eff2f5;
@@ -113,4 +119,5 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif; }
